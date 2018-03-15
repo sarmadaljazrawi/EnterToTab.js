@@ -1,0 +1,20 @@
+input:focus {
+    background-color: rgb(252, 252, 159);
+}
+
+select:focus {
+    background-color: rgb(252, 252, 159);
+}
+
+button:focus {
+    background-color: rgb(252, 252, 159);
+}
+
+div {
+    margin: 5px 5px 5px 5px;
+}
+
+.container {
+    margin: 25px 10px 15px 10px;
+}
+

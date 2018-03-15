@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title></title>
+        <link type="text/css" rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="../entertotab.min.js"></script>
+        <script>
+        $(function() {
+            var form1 = new SA.EnterToTab();
+            form1.AddHandler("[data-entertotab='true']", $("#dvForm1"));
+            
+            var form2 = new SA.EnterToTab();
+            form2.AddHandler("[data-entertotab='true']", $("#dvForm2"));
+        });
+        </script>
+    </head>
+    <body>
+        <section>
+            <div id="dvForm1" class="container">
+                <h1>Enter To Tab</h1>
+                <fieldset>
+                    <legend>Form 1</legend>
+                    <div>
+                        <label for="tbFirstName">FirstName</label>
+                        <input id"tbFirstName" data-entertotab="true" type="text" />
+                    </div>
+                    <div>
+                        <label for="tbLastName">LastName</label>
+                        <input id"tbLastName" data-entertotab="true" type="text" />
+                    </div>
+                    <div>
+                        <label for="tbBirthdate">Birthdate (will not be tabbed on enter)</label>
+                        <input id"tbBirthdate" type="text" />
+                    </div>                    
+                    <div>
+                        <button type="button" data-entertotab="true">Save</button>
+                        <button type="button" data-entertotab="true">Cancel</button>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="dvForm2" class="container">
+                <fieldset>
+                    <legend>Form 2</legend>
+                    <div>
+                        <label for="tbGender">Gender</label>
+                        <input id"tbGenderMale" name="tbGeneder" data-entertotab="true" type="checkbox" />Male
+                        <input id"tbGenderFemale" name="tbGender" data-entertotab="true" type="checkbox" />Female
+                    </div>
+                    <div>
+                        <label for="ddlYear"></label>
+                        <select id"ddlYear" data-entertotab="true">
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="button" data-entertotab="true">Save</button>
+                        <button type="button" data-entertotab="true">Cancel</button>
+                    </div>
+                </fieldset>
+            </div>            
+        </section>
+    </body>
+</htm>
